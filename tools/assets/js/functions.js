@@ -126,7 +126,7 @@ function createUrl() {
     var totalcosturl = document.getElementById("TotalCostURL").value;
     var orderidurl = document.getElementById("OrderIDURL").value;
     var campaignidurl = document.getElementById("CampaignIDURL").value;
-    var referralidurl = document.getElementById("RefIDURL").value;
+    // var referralidurl = document.getElementById("RefIDURL").value;
     var tid = document.getElementById("tid").value;
     // var dateurl = document.getElementById("DateURL").value;
     var currencyurl = document.getElementById("CurrencyURL").value;
