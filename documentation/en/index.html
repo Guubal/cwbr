@@ -6,8 +6,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Clickwise - Tools</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/docs.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/docs.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src='..//js/main.js'></script>
 </head>
@@ -46,14 +46,14 @@
 
             <div class="dropdown ms-3">
                 <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-           Português
+           English
         </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
-                    <li><a class="dropdown-item current" aria-current="true" href="../en/">Inglês</a></li>
+                    <li><a class="dropdown-item current disabled" aria-current="true" href="../es-ES/">Espanhol</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="../es-ES/">Espanhol</a></li>
+                    <li><a class="dropdown-item" href="../pt-BR/">Português</a></li>
                 </ul>
             </div>
 
@@ -79,21 +79,21 @@
                     <ul class="list-unstyled mb-0 py-3 pt-md-1">
                         <li class="mb-1">
                             <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false">
-                        URL Pixel
+                                URL Pixel
                     </button>
 
                             <div class="collapse show" id="getting-started-collapse">
                                 <ul class="list-unstyled fw-normal pb-1 small">
-                                    <li><a href="index.html" class="d-inline-flex align-items-center rounded active">Introdução</a></li>
-                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded disabled">Gerador de Pixel</a></li>
+                                    <li><a href="index.html" class="d-inline-flex align-items-center rounded active">Introduction</a></li>
+                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded disabled">Pixel Generator</a></li>
                                     <li><a href="gtm.html" class="d-inline-flex align-items-center rounded">Google Tag Manager</a></li>
-                                    <li><a href="#" class="d-inline-flex align-items-center rounded">Validar Disparo do Pixel</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">Validate Pixel Trigger</a></li>
 
                                 </ul>
                             </div>
                         </li>
                         <li class="mb-1">
-                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed disabled" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
                         URL Postback
                     </button>
 
@@ -105,7 +105,7 @@
                             </div>
                         </li>
                         <li class="mb-1">
-                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed disabled" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
                         Network Affiliate Api
                     </button>
 
@@ -124,31 +124,31 @@
             <div class="bd-intro ps-lg-4">
                 <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
                     <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">#</a>
-                    <h1 class="bd-title" id="content">Introdução</h1>
+                    <h1 class="bd-title" id="content">Introduction</h1>
                 </div>
-                <p class="bd-lead">Estrutura URL de rastreamento de conversão..</p>
+                <p class="bd-lead">Clickwise pixel conversion tracking structure.</p>
             </div>
 
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-                <strong class="d-block h6 my-2 pb-2 border-bottom">Nesta página</strong>
+                <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
             </div>
             <div class="bd-content ps-lg-4">
-                <p>O pixel é uma imagem que se integra na página de confirmação de uma compra ou registro, ou em plataformas, como o Google Tag Manager, que possuem campos específicos para adicionar tag(pixel). Este pixel é acionado por cookies, que são
-                    salvos automaticamente nos computadores dos clientes que já clicaram anteriormente em um banner do Clickwise.</p>
-                <p class="fw-bold">Se uma compra for feita diretamente da página sem passar previamente pelo nosso redirecionamento, o pixel não funcionará</p>
+                <p>The pixel is an image that is integrated in the confirmation page of a purchase or registration; or in platforms, such as Google Tag Manager, which have specific fields to add that pixel.This pixel is triggered by cookies, which are automatically
+                    saved on the computers of customers who have previously clicked on a banner from Clickwise.</p>
+                <p class="fw-bold">If a purchase is made directly from the page without passing previouslyby our redirection, the pixel will not work</p>
 
 
-                <h3 id="the-pixel">O pixel
+                <h3 id="the-pixel">The Pixel
                     <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#the-pixel" style="padding-left: 0.375em;"></a>
                 </h3>
 
                 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#">{campaign-id}</a></span><span class="s">/<span class="parametros"><a href="#">{action-code}</a></span>/</span><span class="parametros"><a href="#">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#">{currency}</a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
 
-                <h5 id="the-tracking" class="mt-4">URL de rastreamento
+                <h5 id="the-tracking" class="mt-4">Tracking URLs
                     <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#the-pixel" style="padding-left: 0.375em;"></a>
                 </h5>
                 <hr/>
-                <p>Possíveis configurações:</p>
+                <p>Following possible configurations:</p>
                 <p>Host: r.clickwise.net<br>Path Params: /t/{campaign}/{action-code}/{order-id}</p>
                 <table class="table table-hover table-bordered table-s">
                     <thead class="table-dark">
@@ -160,19 +160,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>campaign-id<span class="label label-required">obrigatório</span></td>
+                            <td>campaign-id<span class="label label-required">required</span></td>
                             <td>String</td>
-                            <td>ID único da Campanhha cadastrado na platforma Clickwise</td>
+                            <td>Unique campaign ID on the Clickwise platform</td>
                         </tr>
                         <tr>
-                            <td>action-code<span class="label label-required">obrigatório</span></td>
+                            <td>action-code<span class="label label-required">required</span></td>
                             <td>String</td>
-                            <td>Código de ação válido ativo na campanha</td>
+                            <td>Valid action code active in campaign</td>
                         </tr>
                         <tr>
-                            <td>order-id<span class="label label-required">obrigatório</span></td>
+                            <td>order-id<span class="label label-required">required</span></td>
                             <td>String</td>
-                            <td>Número unico do pedido(ID do pedido) </td>
+                            <td>Unique order/action ID</td>
                         </tr>
                     </tbody>
                 </table>
@@ -180,7 +180,7 @@
                     <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#the-pixel" style="padding-left: 0.375em;"></a>
                 </h5>
                 <hr/>
-                <p>Todos os parâmetros de consulta aceitos pelo URL de rastreamento. (param1={param1}&param2={param2})</p>
+                <p>All query parameters accepted by tracking URL. (param1={param1}&amp;param2={param2})</p>
                 <table class="table table-hover table-bordered">
                     <thead class="table-dark">
                         <tr>
@@ -191,16 +191,15 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>total-cost<span class="label label-op">%</span> <span class="label label-required mr-4">obrigatório</span> </td>
+                            <td>total-cost<span class="label label-op">% action</span> <span class="label label-required mr-4">required</span> </td>
                             <td>Float</td>
-                            <td>Valor Total da transação sem o frete</td>
+                            <td>Order amount without shipping</td>
                         </tr>
                         <tr>
-                            <td>currency<span class="label label-op">opcional</span></td>
+                            <td>currency<span class="label label-op">optional</span></td>
                             <td>String</td>
-                            <td>Código de moeda de 3 caracteres</td>
+                            <td>3 char currency code</td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
