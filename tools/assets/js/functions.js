@@ -37,6 +37,21 @@ function searchBanner() {
             break;
     }
 
+
+    if (shipping == "null" || shipping == "undefined") {
+        log_1 = "Incorrect shipping value = " + shipping;
+        log(log_1);
+
+    }
+    if (amount == "null" || amount == "undefined") {
+        log_1 = "Incorrect amount value = " + amount;
+        log(log_1);
+    }
+
+    if (order == "null" || order == "undefined") {
+        log_1 = "Incorrect amount value = " + amount;
+        log(log_1);
+    }
     if (idmat != "" && idmat != " ") {
 
         for (i = 0; i < sepador.length; i++) {

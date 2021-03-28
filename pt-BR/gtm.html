@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clickwise - Tools</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/docs.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src='..//js/main.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  navbar-expand-md navbar-dark  bd-navbar">
+            <div class="container-xxl">
+                <a href="#" class="navbar-brand center">
+                    <img src="https://panel.clickwise.net/static/images/clickwiselogo.png" height="40" alt="CoolBrand">
+                </a>
+                <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link active">Pixel Creator</a>
+                        <a href="#" class="nav-item nav-link">S2S Creator</a>
+                        <a href="#" class="nav-item nav-link">Messages</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link">Login</a>
+                    </div>
+                </div> -->
+            </div>
+        </nav>
+        </div>
+    </header>
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div class="container-xxl d-flex align-items-md-center">
+            <form class="bd-search position-relative me-auto">
+                <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.0" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            </form>
+
+            <div class="dropdown ms-3">
+                <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+           Português
+        </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                    <li><a class="dropdown-item current" aria-current="true" href="../en/gtm.html">Inglês</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../es-ES/gtm.html">Espanhol</a></li>
+                </ul>
+            </div>
+
+
+            <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+        <title>Expand</title>
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+      </svg>
+      
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+        <title>Collapse</title>
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+      </svg>
+      
+          </button>
+        </div>
+    </nav>
+    <div class="container-xxl my-md-4 bd-layout">
+        <aside class="bd-sidebar">
+            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+                <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false">
+                                URL Pixel
+                    </button>
+
+                            <div class="collapse show" id="getting-started-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="index.html" class="d-inline-flex align-items-center rounded">Introdução</a></li>
+                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded disabled">Gerador de Pixel</a></li>
+                                    <li><a href="gtm.html" class="d-inline-flex align-items-center rounded active">Google Tag Manager</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">Validar Disparo do Pixel</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+                        URL Postback
+                    </button>
+
+                            <div class="collapse" id="customize-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 1</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+                        Network Affiliate Api
+                    </button>
+
+                            <div class="collapse" id="layout-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 3</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- <li class="my-3 mx-4 border-top"></li> -->
+                    </ul>
+            </nav>
+        </aside>
+        <main class="bd-main order-1">
+            <div class="bd-intro ps-lg-4">
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+                    <h1 class="bd-title" id="content">Google Tag Manager</h1>
+                </div>
+                <p class="bd-lead">Instalando o Pixel Clicwise usando o Gerenciador de tags do Google</p>
+            </div>
+            <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                <a href="#h" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">Adci</a>
+            </div>
+            <div class="bd-content ps-lg-4 gtm">
+                <p>
+                    <span class="fw-bold">O que é o Gerenciador de tags?</span><br> O Gerenciador de tags é uma ferramenta que permite aos profissionais de marketing adicionar e atualizar tags e snippets de código, como rastreamento de conversão, análise
+                    de site e código de remarketing de forma rápida e fácil, sem editar o código do site.
+                </p>
+                <p>
+                    <span class="fw-bold">O que é uma tag?</span><br> Uma tag é um trecho de código que geralmente é fornecido pelo marketing para que as plataformas analíticas enviem informações a eles (por exemplo, Clickwise Pixel, Facebook Pixel, Código
+                    de rastreamento do Google Analytics, tags de remarketing, etc.).
+                </p>
+                <p>
+                    <span class="fw-bold">O que é o template Clickwise Pixel?</span> <br>O modelo Clickwise Pixel do Gerenciador de tags do Google permite que os profissionais de marketing implementem facilmente o pixel base e as conversões sem a necessidade
+                    de saber como codificar. Você pode acessar o modelo Clickwise na <a href="#">Galeria de modelos do Google Tag Manager</a>, ou na página inicial do Gerenciador de tags. Siga esses passos:
+                </p>
+
+                <div class="accordion" id="accordion_">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                <h5>Adicione o modelo Clickwise Pixel à sua conta GTM:</h5>
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion_">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Vá para o <strong>Google Tag Manager</strong> e navegue até a seção <strong>Modelos</strong> o lado esquerdo da página.
+                                        <img src="../img/pt-BR/step0.1.jpg" alt="Passo 0.1" data-bs-toggle="modal" data-bs-target="#slep0_1" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Em <strong>Modelos de tag</strong>, clique em"Pesquisar na galeria", e pesquise por <strong>Clickwise Pixel.</strong>
+                                        <img src="../img/pt-BR/step0.2.jpg" alt="Passo 0.2" data-bs-toggle="modal" data-bs-target="#slep0_2" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Clique na opção <strong>Clickwise Pixel</strong> e adicione o modelo Clickwise Pixel ao espaço de trabalho relevante.</li>
+
+                                    <li><strong>Envie </strong> o modelo Clickwise Pixel para o seu espaço de trabalho.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <h5>Adicione as Variavies de controle:</h5>
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion_">
+                            <div class="accordion-body">
+                                <p>
+                                    Antes de prosseguir para este passo a passo, navegue até a seção <strong>Variáveis</strong> e certifique-se se já não existem as variavies: Numero do Pedido(transactionID); Valor total da compra(transactionTotal) e
+                                    Valor do frete(transactionShipping).
+                                </p>
+                                <p>
+                                    Caso exista pule este passo e va para o passo <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">Adicione a Tag Clickwise na sua página WEB:</a>
+                                </p>
+                                <p>Caso não exista ou você não consiga indetificar prossiga</p>
+
+                                <ol>
+                                    <li>Vá para o <strong>Google Tag Manager</strong> e clique no botão <strong>Visualizar</strong> na parte superior direita da página.
+                                        <img src="../img/pt-BR/step1.1.jpg" alt="Passo 1.1" data-bs-toggle="modal" data-bs-target="#slep1_1" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Coloque a ULR da sua <strong>Loja</strong> e depois clique em <strong>Start</strong>.
+                                        <img src="../img/pt-BR/step1.2.jpg" alt="Passo 1.2" data-bs-toggle="modal" data-bs-target="#slep1_2" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Finalizei uma <strong>compra teste</strong>(confirmação de compra).
+                                        <img src="../img/pt-BR/examplepage.jpg" alt="Example Page" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Alterne a aba do navegador para <strong>Tag Assistant</strong> e clique em <strong>Window Loaded</strong>(da página de pedido finalizado).
+                                        <img src="../img/pt-BR/step1.3.jpg" alt="Passo 1.3" data-bs-toggle="modal" data-bs-target="#slep1_3" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Clique em <strong>DataLayer</strong> para obter as informações coletadas da página.
+                                        <img src="../img/pt-BR/step1.4.jpg" alt="Passo 1.4" data-bs-toggle="modal" data-bs-target="#slep1_4" class="img-fluid pointer rounded border"></li>
+
+                                    <li id="slep1__6">Indentifique e <strong>copie</strong> as variveis que receba: Valor Total do Pedido; ID do Pedido e Valor do Frete.
+                                        <img src="../img/pt-BR/step1.5.jpg" alt="Passo 1.5" data-bs-toggle="modal" data-bs-target="#slep1_5" class="img-fluid pointer rounded border">
+                                        <table class="table table-hover table-bordered mt-3">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th scope="col">Variavel</th>
+                                                    <th scope="col">Descrição</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>transactionId</td>
+                                                    <td>ID do pedido</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>transactionTotal</td>
+                                                    <td>Valor Total do Pedido</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ecommerce.purchase.actionField.shipping</td>
+                                                    <td>Valor do Frete</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </li>
+
+                                    <li>No <strong>Google Tag Manager</strong> navegue até a seção <strong>Variáveis</strong> no lado esquerdo da página.
+                                        <img src="../img/pt-BR/step1.6.jpg" alt="Passo 1.6" data-bs-toggle="modal" data-bs-target="#slep1_6" class="img-fluid pointer rounded border"></li>
+
+                                    <li id="slep__8">Clique no botão <strong>Nova</strong> para criar uma nova variável.
+                                        <img src="../img/pt-BR/step1.7.jpg" alt="Passo 1.7" data-bs-toggle="modal" data-bs-target="#slep1_7" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Clique na caixa <strong>Configuração da variável</strong> para criar uma nova variável.
+                                        <img src="../img/pt-BR/step1.8.jpg" alt="Passo 1.8" data-bs-toggle="modal" data-bs-target="#slep1_8" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Escolha <strong>Variável de camamada de Dados</strong> na seção de Variáveis de Página.
+                                        <img src="../img/pt-BR/step1.9.jpg" alt="Passo 1.9" data-bs-toggle="modal" data-bs-target="#slep1_9" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Nomeie a nova tag, por exemplo: <strong>'transactionId'</strong>
+                                        <img src="../img/pt-BR/step1.10.jpg" alt="Passo 1.10" data-bs-toggle="modal" data-bs-target="#slep1_10" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Clique na caixa: <strong>Configuração da variável</strong> e depois cole a informação que coletamos no <a href="#slep1__6"> passo 6</a> de acordo com o nome, no campo <strong>Nome da variável da camada de dados </strong>
+                                        <img src="../img/pt-BR/step1.11.jpg" alt="Passo 1.11" data-bs-toggle="modal" data-bs-target="#slep1_11" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Repita o processo do <a href="#slep__8">passo 8 - 12</a> para as variáveis de <strong>Valor Total do Pedido</strong> e <strong>Valor do Frete</strong></strong>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <h5>Adicione a Tag Clickwise na sua página WEB:</h5>
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion_">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Navegue até a seção <strong>Tags</strong> no lado esquerdo da página.
+                                        <img src="../img/pt-BR/step2.1.jpg" alt="Passo 2.1" data-bs-toggle="modal" data-bs-target="#slep2_1" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Clique em Adicionar uma <strong>Nova</strong> Tag
+                                        <img src="../img/pt-BR/step2.2.jpg" alt="Passo 2.2" data-bs-toggle="modal" data-bs-target="#slep2_2" class="img-fluid pointer rounded border"></li>
+                                    </li>
+
+                                    <li>Clique na caixa <strong>Configuração de tag</strong>
+                                        <img src="../img/pt-BR/step2.3.jpg" alt="Passo 2.3" data-bs-toggle="modal" data-bs-target="#slep2_3" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Escolha <strong>Clickwise Pixel</strong> na seção de tags personalizadas
+                                        <img src="../img/pt-BR/step2.4.jpg" alt="Passo 2.4" data-bs-toggle="modal" data-bs-target="#slep2_4" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Nomeie a nova tag, por exemplo: <strong>'Clickwise - Pixel'</strong>
+                                        <img src="../img/pt-BR/step2.5.jpg" alt="Passo 2.5" data-bs-toggle="modal" data-bs-target="#slep2_5" class="img-fluid pointer rounded border"></li>
+
+                                    <li id="he3">Adicione os valores aos campos</strong>
+                                        <img src="../img/pt-BR/step2.6.jpg" alt="Passo 2.6" data-bs-toggle="modal" data-bs-target="#slep2_6" class="img-fluid pointer rounded border">
+                                        <table class="table table-hover table-bordered mt-3">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th scope="col">Campo</th>
+                                                    <th scope="col">Tipo</th>
+                                                    <th scope="col">Descrição</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>CampaingID<span class="label label-required mr-4">obrigatório</span> </td>
+                                                    <td>String</td>
+                                                    <td>ID único da Campanhha cadastrado na platforma Clickwise</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>OrderID<span class="label label-required mr-4">obrigatório</span> </td>
+                                                    <td>String</td>
+                                                    <td>Número unico do pedido(ID do pedido) - TransactionID</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Amount<span class="label label-required">obrigatório</span></td>
+                                                    <td>Float</td>
+                                                    <td>Valor Total da transação - TransactionTotal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Shipping<span class="label label-required">obrigatório</span></td>
+                                                    <td>Float</td>
+                                                    <td>Valor do Frete - transactionShipping <br><span class="inf">
+                                                        Se <strong>Shipping</strong> for igual à<strong>"WithShipping"</strong>, o pixel receberá o valor total da compra conciderando o frete</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Currency<span class="label label-required">obrigatório</span></td>
+                                                    <td>String</td>
+                                                    <td>Código de moeda de 3 caracteres</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- start modal slet 0.0 -->
+                <!-- start modal slet 0.0 -->
+                <!-- start modal slet 0.0 -->
+                <div class="modal fade" id="slep0_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step0.1.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep0_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step0.2.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal slet 0.0 -->
+                <!-- end modal slet 0.0 -->
+                <!-- end modal slet 0.0 -->
+
+
+                <!-- start modal slet 1.0 -->
+                <!-- start modal slet 1.0 -->
+                <!-- start modal slet 1.0 -->
+                <div class="modal fade" id="slep1_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.1.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.2.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.3.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.4.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.5.0.jpg" style="width: 70%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.6.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_7" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.7.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_8" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.8.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_9" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.9.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_10" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.10.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_11" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.11.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep1_12" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step1.12.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal slet 1.0 -->
+                <!-- end modal slet 1.0 -->
+                <!-- end modal slet 1.0 -->
+
+
+                <!-- start modal slet 2.1 -->
+                <!-- start modal slet 2.1 -->
+                <!-- start modal slet 2.1 -->
+                <div class="modal fade" id="slep2_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step2.1.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep2_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step2.2.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep2_3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step2.3.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep2_4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step2.4.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep2_5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step2.5.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="slep2_6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                                <img class="" src="../img/pt-BR/step2.6.jpg" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal slet 2.1 -->
+                <!-- end modal slet 2.1 -->
+                <!-- end modal slet 2.1 -->
+        </main>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $('[data-toggle="cwtooltip"]').tooltip()
+    })
+</script>
+
+</html>

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Clickwise - Tools</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/docs.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src='..//js/main.js'></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar  navbar-expand-md navbar-dark  bd-navbar">
             <div class="container-xxl">
-                <a href="#" class="navbar-brand">
+                <a href="#" class="navbar-brand center">
                     <img src="https://panel.clickwise.net/static/images/clickwiselogo.png" height="40" alt="CoolBrand">
                 </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+             </button>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
@@ -32,7 +33,7 @@
                     <div class="navbar-nav ml-auto">
                         <a href="#" class="nav-item nav-link">Login</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </nav>
         </div>
@@ -45,20 +46,14 @@
 
             <div class="dropdown ms-3">
                 <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-          <span class="d-none d-lg-inline">Bootstrap</span> v5.0
+           Português
         </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
-                    <li><a class="dropdown-item current" aria-current="true" href="/docs/5.0/">Latest (5.0.x)</a></li>
+                    <li><a class="dropdown-item current" aria-current="true" href="../en/">Inglês</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+                    <li><a class="dropdown-item" href="../es-ES/">Espanhol</a></li>
                 </ul>
             </div>
 
@@ -84,22 +79,22 @@
                     <ul class="list-unstyled mb-0 py-3 pt-md-1">
                         <li class="mb-1">
                             <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false">
-                        URL Tracking Pixel
+                        URL Pixel
                     </button>
 
                             <div class="collapse show" id="getting-started-collapse">
                                 <ul class="list-unstyled fw-normal pb-1 small">
-                                    <li><a href="index.html" class="d-inline-flex align-items-center rounded active">Introduction</a></li>
-                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded">Generator Pixel URL</a></li>
+                                    <li><a href="index.html" class="d-inline-flex align-items-center rounded active">Introdução</a></li>
+                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded disabled">Gerador de Pixel</a></li>
                                     <li><a href="gtm.html" class="d-inline-flex align-items-center rounded">Google Tag Manager</a></li>
-                                    <li><a href="#" class="d-inline-flex align-items-center rounded">Pixel Shot Validation</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">Validar Disparo do Pixel</a></li>
 
                                 </ul>
                             </div>
                         </li>
                         <li class="mb-1">
                             <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
-                         URL Postback
+                        URL Postback
                     </button>
 
                             <div class="collapse" id="customize-collapse">
@@ -111,7 +106,7 @@
                         </li>
                         <li class="mb-1">
                             <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
-                                Network Affiliate Api
+                        Network Affiliate Api
                     </button>
 
                             <div class="collapse" id="layout-collapse">
@@ -128,13 +123,86 @@
         <main class="bd-main order-1">
             <div class="bd-intro ps-lg-4">
                 <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
-                    <h1 class="bd-title" id="content">Google Tag Manager</h1>
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">#</a>
+                    <h1 class="bd-title" id="content">Introdução</h1>
                 </div>
+                <p class="bd-lead">Estrutura URL de rastreamento de conversão..</p>
             </div>
-            <p class="bd-lead">Instructions for installing the clickwise pixel via Google Tag Maneger.</p>
+
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-                <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                <strong class="d-block h6 my-2 pb-2 border-bottom">Nesta página</strong>
+            </div>
+            <div class="bd-content ps-lg-4">
+                <p>O pixel é uma imagem que se integra na página de confirmação de uma compra ou registro, ou em plataformas, como o Google Tag Manager, que possuem campos específicos para adicionar tag(pixel). Este pixel é acionado por cookies, que são
+                    salvos automaticamente nos computadores dos clientes que já clicaram anteriormente em um banner do Clickwise.</p>
+                <p class="fw-bold">Se uma compra for feita diretamente da página sem passar previamente pelo nosso redirecionamento, o pixel não funcionará</p>
+
+
+                <h3 id="the-pixel">O pixel
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#the-pixel" style="padding-left: 0.375em;"></a>
+                </h3>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#">{campaign-id}</a></span><span class="s">/<span class="parametros"><a href="#">{action-code}</a></span>/</span><span class="parametros"><a href="#">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#">{currency}</a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
+
+                <h5 id="the-tracking" class="mt-4">URL de rastreamento
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#the-pixel" style="padding-left: 0.375em;"></a>
+                </h5>
+                <hr/>
+                <p>Possíveis configurações:</p>
+                <p>Host: r.clickwise.net<br>Path Params: /t/{campaign}/{action-code}/{order-id}</p>
+                <table class="table table-hover table-bordered table-s">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Field</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>campaign-id<span class="label label-required">obrigatório</span></td>
+                            <td>String</td>
+                            <td>ID único da Campanhha cadastrado na platforma Clickwise</td>
+                        </tr>
+                        <tr>
+                            <td>action-code<span class="label label-required">obrigatório</span></td>
+                            <td>String</td>
+                            <td>Código de ação válido ativo na campanha</td>
+                        </tr>
+                        <tr>
+                            <td>order-id<span class="label label-required">obrigatório</span></td>
+                            <td>String</td>
+                            <td>Número unico do pedido(ID do pedido) </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5 id="the-query" class="mt-4">Query Params:
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#the-pixel" style="padding-left: 0.375em;"></a>
+                </h5>
+                <hr/>
+                <p>Todos os parâmetros de consulta aceitos pelo URL de rastreamento. (param1={param1}&param2={param2})</p>
+                <table class="table table-hover table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Field</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>total-cost<span class="label label-op">%</span> <span class="label label-required mr-4">obrigatório</span> </td>
+                            <td>Float</td>
+                            <td>Valor Total da transação sem o frete</td>
+                        </tr>
+                        <tr>
+                            <td>currency<span class="label label-op">opcional</span></td>
+                            <td>String</td>
+                            <td>Código de moeda de 3 caracteres</td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </main>
     </div>
@@ -143,6 +211,13 @@
 
     </section>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $('[data-toggle="cwtooltip"]').tooltip()
+    })
+</script>
+
 
 </html>
