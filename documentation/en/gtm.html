@@ -176,385 +176,383 @@
                         </h2>
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion_">
                             <div class="accordion-body">
-                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion_">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Before proceeding to this step by step, navigate to the <strong>Variables</strong> section and make sure that the variables do not already exist: Order Number (transactionID); Total purchase amount (transactionTotal)
-                                            and Shipping amount (transactionShipping).
-                                        </p>
-                                        <p>
-                                            If so, skip this step and go to step <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">Add the Clickwise Tag to your WEB page.</a>
-                                        </p>
-                                        <p>If it does not exist or you cannot identify it, proceed</p>
+                                <p>
+                                    Before proceeding to this step by step, navigate to the <strong>Variables</strong> section and make sure that the variables do not already exist: Order Number (transactionID); Total purchase amount (transactionTotal)
+                                    and Shipping amount (transactionShipping).
+                                </p>
+                                <p>
+                                    If so, skip this step and go to step <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">Add the Clickwise Tag to your WEB page.</a>
+                                </p>
+                                <p>If it does not exist or you cannot identify it, proceed</p>
 
-                                        <ol>
-                                            <li>Go to <strong>Google Tag Manager</strong> and click the button <strong>Preview</strong> at the top right of the page.
-                                                <img src="../assets/img/en/step1.1.jpg" alt="Step 1.1" data-bs-toggle="modal" data-bs-target="#slep1_1" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Enter the URL of your <strong>Store</strong> and then click <strong>Start</strong>.
-                                                <img src="../assets/img/en/step1.2.jpg" alt="Step 1.2" data-bs-toggle="modal" data-bs-target="#slep1_2" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Make a <strong>purchase test</strong>(purchase confirmation).
-                                                <img src="../assets/img/en/examplepage.jpg" alt="Example Page" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Switch the browser tab to <strong>Tag Assistant</strong> and click <strong>Window Loaded</strong>(of the completed order page).
-                                                <img src="../assets/img/en/step1.3.jpg" alt="Step 1.3" data-bs-toggle="modal" data-bs-target="#slep1_3" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Click in<strong>DataLayer</strong> to get the information collected from the page.
-                                                <img src="../assets/img/en/step1.4.jpg" alt="Step 1.4" data-bs-toggle="modal" data-bs-target="#slep1_4" class="img-fluid pointer rounded border"></li>
-
-                                            <li id="slep1__6">Identify and <strong>copy</strong> the names of the variables of: Total Order Amount; Order ID and Shipping Amount. (The image below illustrates just one example)
-                                                <img src="../assets/img/en/step1.5.jpg" alt="Step 1.5" data-bs-toggle="modal" data-bs-target="#slep1_5" class="img-fluid pointer rounded border">
-                                                <table class="table table-hover table-bordered mt-3">
-                                                    <thead class="table-dark">
-                                                        <tr>
-                                                            <th scope="col">Variable</th>
-                                                            <th scope="col">Description</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>transactionId</td>
-                                                            <td>Order ID</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>transactionTotal</td>
-                                                            <td>Total Order Amount</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>ecommerce.purchase.actionField.shipping</td>
-                                                            <td>Shipping Value</td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </li>
-
-                                            <li>In the <strong>Google Tag Manager</strong> navigate to the section <strong>Variables</strong> on the left side of the page.
-                                                <img src="../assets/img/en/step1.6.jpg" alt="Step 1.6" data-bs-toggle="modal" data-bs-target="#slep1_6" class="img-fluid pointer rounded border"></li>
-
-                                            <li id="slep__8">Click the <strong>new</strong> button to create a new variable.
-                                                <img src="../assets/img/en/step1.7.jpg" alt="Step 1.7" data-bs-toggle="modal" data-bs-target="#slep1_7" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Click the <strong>Variable configuration</strong> box to configure the variable.
-                                                <img src="../assets/img/en/step1.8.jpg" alt="Step 1.8" data-bs-toggle="modal" data-bs-target="#slep1_8" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Choose <strong>Data Layer Variable</strong> in the Page Variables section.
-                                                <img src="../assets/img/en/step1.9.jpg" alt="Step 1.9" data-bs-toggle="modal" data-bs-target="#slep1_9" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Name the pixel, for example: <strong>'OrderID'</strong>; <strong>'Amount'</strong>; <strong>'Shipping'</strong>
-                                                <img src="../assets/img/en/step1.10.jpg" alt="Step 1.10" data-bs-toggle="modal" data-bs-target="#slep1_10" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Click on the box: <strong>Variable configuration</strong> and then paste the information we collected in <a href="#slep1__6"> step 6</a>
-                                                <img src="../assets/img/en/step1.11.jpg" alt="Step 1.11" data-bs-toggle="modal" data-bs-target="#slep1_11" class="img-fluid pointer rounded border"></li>
-
-                                            <li>Click the <strong>Save</strong> button</li>
-
-                                            <li>Repeat the process from <a href="#slep__8">step 8 - 13</a> to create the <strong>Order Amount</strong> e <strong>Shipping Amount</strong>variables.
-
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading3">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                <h5>Add the Clickwise Tag to your WEB page:</h5>
-                            </button>
-                        </h2>
-                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion_">
-                            <div class="accordion-body">
                                 <ol>
-                                    <li>Navigate to the <strong>Tags</strong> section on the left hand side of the page.
-                                        <img src="../assets/img/en/step2.1.jpg" alt="Slep 2.1" data-bs-toggle="modal" data-bs-target="#slep1_1" class="img-fluid pointer rounded border"></li>
+                                    <li>Go to <strong>Google Tag Manager</strong> and click the button <strong>Preview</strong> at the top right of the page.
+                                        <img src="../assets/img/en/step1.1.jpg" alt="Step 1.1" data-bs-toggle="modal" data-bs-target="#slep1_1" class="img-fluid pointer rounded border"></li>
 
-                                    <li>Click Add a <strong>New</strong> Tag
-                                        <img src="../assets/img/en/step2.2.jpg" alt="Slep 2.2" data-bs-toggle="modal" data-bs-target="#slep1_2" class="img-fluid pointer rounded border"></li>
-                                    </li>
+                                    <li>Enter the URL of your <strong>Store</strong> and then click <strong>Start</strong>.
+                                        <img src="../assets/img/en/step1.2.jpg" alt="Step 1.2" data-bs-toggle="modal" data-bs-target="#slep1_2" class="img-fluid pointer rounded border"></li>
 
-                                    <li>Click <strong>'Tag Configuration'</strong> box
-                                        <img src="../assets/img/en/step2.3.jpg" alt="Slep 2.3" data-bs-toggle="modal" data-bs-target="#slep1_3" class="img-fluid pointer rounded border"></li>
+                                    <li>Make a <strong>purchase test</strong>(purchase confirmation).
+                                        <img src="../assets/img/en/examplepage.jpg" alt="Example Page" class="img-fluid pointer rounded border"></li>
 
-                                    <li>Choose <strong>Clickwise Pixel</strong> from the custom tags section
-                                        <img src="../assets/img/en/step2.4.jpg" alt="Slep 2.4" data-bs-toggle="modal" data-bs-target="#slep1_4" class="img-fluid pointer rounded border"></li>
+                                    <li>Switch the browser tab to <strong>Tag Assistant</strong> and click <strong>Window Loaded</strong>(of the completed order page).
+                                        <img src="../assets/img/en/step1.3.jpg" alt="Step 1.3" data-bs-toggle="modal" data-bs-target="#slep1_3" class="img-fluid pointer rounded border"></li>
 
-                                    <li>Name the new tag, for example: <strong>'Clickwise - Pixel'</strong>
-                                        <img src="../assets/img/en/step2.5.jpg" alt="Slep 2.5" data-bs-toggle="modal" data-bs-target="#slep1_5" class="img-fluid pointer rounded border"></li>
+                                    <li>Click in<strong>DataLayer</strong> to get the information collected from the page.
+                                        <img src="../assets/img/en/step1.4.jpg" alt="Step 1.4" data-bs-toggle="modal" data-bs-target="#slep1_4" class="img-fluid pointer rounded border"></li>
 
-                                    <li>Add the values to the fields</strong>
-                                        <img src="../assets/img/en/step2.6.jpg" alt="Slep 2.6" data-bs-toggle="modal" data-bs-target="#slep1_6" class="img-fluid pointer rounded border">
+                                    <li id="slep1__6">Identify and <strong>copy</strong> the names of the variables of: Total Order Amount; Order ID and Shipping Amount. (The image below illustrates just one example)
+                                        <img src="../assets/img/en/step1.5.jpg" alt="Step 1.5" data-bs-toggle="modal" data-bs-target="#slep1_5" class="img-fluid pointer rounded border">
                                         <table class="table table-hover table-bordered mt-3">
                                             <thead class="table-dark">
                                                 <tr>
-                                                    <th scope="col">Field</th>
-                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Variable</th>
                                                     <th scope="col">Description</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>CampaingID<span class="label label-required mr-4">required</span> </td>
-                                                    <td>String</td>
-                                                    <td>Unique campaign ID on the Clickwise platform</td>
+                                                    <td>transactionId</td>
+                                                    <td>Order ID</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>OrderID<span class="label label-required mr-4">required</span> </td>
-                                                    <td>String</td>
-                                                    <td>Order number of the transaction - transactionID</td>
+                                                    <td>transactionTotal</td>
+                                                    <td>Total Order Amount</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Amount<span class="label label-required">required</span></td>
-                                                    <td>Float</td>
-                                                    <td>Transaction amount - transactionTotal</td>
+                                                    <td>ecommerce.purchase.actionField.shipping</td>
+                                                    <td>Shipping Value</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Shipping<span class="label label-required">required</span></td>
-                                                    <td>Float</td>
-                                                    <td>Transaction shipping - transactionShipping <br><span class="inf">
-                                                        If <strong>Shipping</strong> is equal to <strong>"WithShipping"</strong>, the pixel will receive the total amount of the order</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Currency<span class="label label-required">required</span></td>
-                                                    <td>String</td>
-                                                    <td>3 char currency code</td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </li>
+
+                                    <li>In the <strong>Google Tag Manager</strong> navigate to the section <strong>Variables</strong> on the left side of the page.
+                                        <img src="../assets/img/en/step1.6.jpg" alt="Step 1.6" data-bs-toggle="modal" data-bs-target="#slep1_6" class="img-fluid pointer rounded border"></li>
+
+                                    <li id="slep__8">Click the <strong>new</strong> button to create a new variable.
+                                        <img src="../assets/img/en/step1.7.jpg" alt="Step 1.7" data-bs-toggle="modal" data-bs-target="#slep1_7" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Click the <strong>Variable configuration</strong> box to configure the variable.
+                                        <img src="../assets/img/en/step1.8.jpg" alt="Step 1.8" data-bs-toggle="modal" data-bs-target="#slep1_8" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Choose <strong>Data Layer Variable</strong> in the Page Variables section.
+                                        <img src="../assets/img/en/step1.9.jpg" alt="Step 1.9" data-bs-toggle="modal" data-bs-target="#slep1_9" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Name the pixel, for example: <strong>'OrderID'</strong>; <strong>'Amount'</strong>; <strong>'Shipping'</strong>
+                                        <img src="../assets/img/en/step1.10.jpg" alt="Step 1.10" data-bs-toggle="modal" data-bs-target="#slep1_10" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Click on the box: <strong>Variable configuration</strong> and then paste the information we collected in <a href="#slep1__6"> step 6</a>
+                                        <img src="../assets/img/en/step1.11.jpg" alt="Step 1.11" data-bs-toggle="modal" data-bs-target="#slep1_11" class="img-fluid pointer rounded border"></li>
+
+                                    <li>Click the <strong>Save</strong> button</li>
+
+                                    <li>Repeat the process from <a href="#slep__8">step 8 - 13</a> to create the <strong>Order Amount</strong> e <strong>Shipping Amount</strong>variables.
+
                                 </ol>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <h5>Add the Clickwise Tag to your WEB page:</h5>
+                            </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion_">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Navigate to the <strong>Tags</strong> section on the left hand side of the page.
+                                <img src="../assets/img/en/step2.1.jpg" alt="Slep 2.1" data-bs-toggle="modal" data-bs-target="#slep1_1" class="img-fluid pointer rounded border"></li>
+
+                            <li>Click Add a <strong>New</strong> Tag
+                                <img src="../assets/img/en/step2.2.jpg" alt="Slep 2.2" data-bs-toggle="modal" data-bs-target="#slep1_2" class="img-fluid pointer rounded border"></li>
+                            </li>
+
+                            <li>Click <strong>'Tag Configuration'</strong> box
+                                <img src="../assets/img/en/step2.3.jpg" alt="Slep 2.3" data-bs-toggle="modal" data-bs-target="#slep1_3" class="img-fluid pointer rounded border"></li>
+
+                            <li>Choose <strong>Clickwise Pixel</strong> from the custom tags section
+                                <img src="../assets/img/en/step2.4.jpg" alt="Slep 2.4" data-bs-toggle="modal" data-bs-target="#slep1_4" class="img-fluid pointer rounded border"></li>
+
+                            <li>Name the new tag, for example: <strong>'Clickwise - Pixel'</strong>
+                                <img src="../assets/img/en/step2.5.jpg" alt="Slep 2.5" data-bs-toggle="modal" data-bs-target="#slep1_5" class="img-fluid pointer rounded border"></li>
+
+                            <li>Add the values to the fields</strong>
+                                <img src="../assets/img/en/step2.6.jpg" alt="Slep 2.6" data-bs-toggle="modal" data-bs-target="#slep1_6" class="img-fluid pointer rounded border">
+                                <table class="table table-hover table-bordered mt-3">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th scope="col">Field</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>CampaingID<span class="label label-required mr-4">required</span> </td>
+                                            <td>String</td>
+                                            <td>Unique campaign ID on the Clickwise platform</td>
+                                        </tr>
+                                        <tr>
+                                            <td>OrderID<span class="label label-required mr-4">required</span> </td>
+                                            <td>String</td>
+                                            <td>Order number of the transaction - transactionID</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Amount<span class="label label-required">required</span></td>
+                                            <td>Float</td>
+                                            <td>Transaction amount - transactionTotal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shipping<span class="label label-required">required</span></td>
+                                            <td>Float</td>
+                                            <td>Transaction shipping - transactionShipping <br><span class="inf">
+                                                        If <strong>Shipping</strong> is equal to <strong>"WithShipping"</strong>, the pixel will receive the total amount of the order</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Currency<span class="label label-required">required</span></td>
+                                            <td>String</td>
+                                            <td>3 char currency code</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    </div>
 
 
-                <!-- start modal slet 0.0 -->
-                <!-- start modal slet 0.0 -->
-                <!-- start modal slet 0.0 -->
-                <div class="modal fade" id="slep0_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step0.1.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+    <!-- start modal slet 0.0 -->
+    <!-- start modal slet 0.0 -->
+    <!-- start modal slet 0.0 -->
+    <div class="modal fade" id="slep0_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step0.1.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep0_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step0.2.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep0_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step0.2.jpg" style="width: 100%;">
                 </div>
-                <!-- end modal slet 0.0 -->
-                <!-- end modal slet 0.0 -->
-                <!-- end modal slet 0.0 -->
+            </div>
+        </div>
+    </div>
+    <!-- end modal slet 0.0 -->
+    <!-- end modal slet 0.0 -->
+    <!-- end modal slet 0.0 -->
 
 
-                <!-- start modal slet 1.0 -->
-                <!-- start modal slet 1.0 -->
-                <!-- start modal slet 1.0 -->
-                <div class="modal fade" id="slep1_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.1.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+    <!-- start modal slet 1.0 -->
+    <!-- start modal slet 1.0 -->
+    <!-- start modal slet 1.0 -->
+    <div class="modal fade" id="slep1_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.1.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.2.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.2.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.3.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.3.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.4.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.4.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.5.0.jpg" style="width: 70%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.5.0.jpg" style="width: 70%;">
                 </div>
-                <div class="modal fade" id="slep1_6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.6.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.6.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_7" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.7.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_7" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.7.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_8" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.8.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_8" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.8.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_9" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.9.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_9" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.9.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_10" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.10.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_10" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.10.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_11" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.11.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_11" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.11.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep1_12" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step1.12.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep1_12" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step1.12.jpg" style="width: 100%;">
                 </div>
-                <!-- end modal slet 1.0 -->
-                <!-- end modal slet 1.0 -->
-                <!-- end modal slet 1.0 -->
+            </div>
+        </div>
+    </div>
+    <!-- end modal slet 1.0 -->
+    <!-- end modal slet 1.0 -->
+    <!-- end modal slet 1.0 -->
 
 
-                <!-- start modal slet 2.1 -->
-                <!-- start modal slet 2.1 -->
-                <!-- start modal slet 2.1 -->
-                <div class="modal fade" id="slep2_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step2.1.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+    <!-- start modal slet 2.1 -->
+    <!-- start modal slet 2.1 -->
+    <!-- start modal slet 2.1 -->
+    <div class="modal fade" id="slep2_1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step2.1.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep2_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step2.2.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep2_2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step2.2.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep2_3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step2.3.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep2_3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step2.3.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep2_4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step2.4.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep2_4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step2.4.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep2_5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step2.5.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep2_5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step2.5.jpg" style="width: 100%;">
                 </div>
-                <div class="modal fade" id="slep2_6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/en/step2.6.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="slep2_6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="" src="../assets/img/en/step2.6.jpg" style="width: 100%;">
                 </div>
-                <!-- end modal slet 2.1 -->
-                <!-- end modal slet 2.1 -->
-                <!-- end modal slet 2.1 -->
+            </div>
+        </div>
+    </div>
+    <!-- end modal slet 2.1 -->
+    <!-- end modal slet 2.1 -->
+    <!-- end modal slet 2.1 -->
 
 
-        </main>
+    </main>
 
 
 </body>
