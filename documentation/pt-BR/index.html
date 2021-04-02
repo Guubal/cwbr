@@ -9,7 +9,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/docs.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src='../assets/js/main.js'></script>
 </head>
 
 <body>
@@ -34,6 +33,8 @@
                         <a href="#" class="nav-item nav-link">Login</a>
                     </div>
                 </div> -->
+
+                <button type="button" class="btn btn-outline-info inf-pixel" data-bs-toggle="modal" data-bs-target="#config_c">Info - Campaign</button>
             </div>
         </nav>
         </div>
@@ -204,6 +205,32 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="modal fade" id="config_c" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Informação sobre seu Pixel</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <strong>ID da Campanha: </strong><span id="id_camp"></span> <br>
+                                <strong>Action Code ativo: </strong><span id="action_code"></span>
+                            </p>
+
+                            <hr>
+                            <h5>Sua URL de Rastreamento</h5>
+                            <div class="bd-clipboard"><button type="button" onclick="copyPixel()" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                            <div class="highlight" id="test"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#" id="id_camp_px"></a></span><span class="s">/<span class="parametros"><a href="#" id="action_code_px"></a></span>/</span><span class="parametros"><a href="#">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#">{currency}</a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 
@@ -218,6 +245,7 @@
         $('[data-toggle="cwtooltip"]').tooltip()
     })
 </script>
+<script src='../assets/js/main.js'></script>
 
 
 </html>
