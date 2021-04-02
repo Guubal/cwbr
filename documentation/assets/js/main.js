@@ -29,21 +29,33 @@ $(document).ready(function() {
         if (parts.length === 2) return parts.pop().split(';').shift();
     };
 
-    var cookie = "";
-    var campaing_ID = getUrlParameter('campaign_id');
-    createCookie("Campaing", cookie + campaing_ID, 30);
-    var action_Code = getUrlParameter('action_code');
-    createCookie("ActionCode", cookie + action_Code, 30);
+    [
+        "utm_source",
+        "utm_medium",
+        "utm_campaign"
+    ]
+    .forEach(function(utm) {
 
-    campaignID = getCookie('Campaing');
-    actionCode = getCookie('ActionCode');
+        if (getUrlParameter(utm) != null) {
+            CookieInt("Integrada-" + utm, getUrlParameter(utm), 30);
+        }
+    });
+
+    // var cookie = "";
+    // var campaing_ID = getUrlParameter('campaign_id');
+    // createCookie("Campaing", cookie + campaing_ID, 30);
+    // var action_Code = getUrlParameter('action_code');
+    // createCookie("ActionCode", cookie + action_Code, 30);
+
+    // campaignID = getCookie('Campaing');
+    // actionCode = getCookie('ActionCode');
 
 
-    document.getElementById("id_camp").innerHTML = campaignID;
-    document.getElementById("action_code").innerHTML = actionCode;
+    // document.getElementById("id_camp").innerHTML = campaignID;
+    // document.getElementById("action_code").innerHTML = actionCode;
 
-    document.getElementById("id_camp_px").innerHTML = campaing_ID;
-    document.getElementById("action_code_px").innerHTML = actionCode;
+    // document.getElementById("id_camp_px").innerHTML = campaing_ID;
+    // document.getElementById("action_code_px").innerHTML = actionCode;
 })
 
 function copyPixel() {
