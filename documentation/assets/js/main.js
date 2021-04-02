@@ -31,9 +31,12 @@ $(document).ready(function() {
 
     var cookie = "";
     var campaing_ID = getUrlParameter('campaign_id');
-    createCookie("Campaing", cookie + campaing_ID, 1000);
+    createCookie("Campaing", cookie + campaing_ID, 30);
+    var action_Code = getUrlParameter('action_code');
+    createCookie("Campaing", cookie + action_Code, 30);
 
-    var campaignID = getCookie('campaign_id')
+    campaignID = getCookie('campaign_id')
+    actionCode = getCookie('action_code')
 
 
     document.getElementById("id_camp").innerHTML = campaignID;
