@@ -22,17 +22,21 @@ $(document).ready(function() {
             }
         }
     };
+
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    };
+
     var cookie = "";
     var campaing_ID = getUrlParameter('campaign_id');
-
     createCookie("Campaing", cookie + campaing_ID, 1000);
 
-    var actionCode = getUrlParameter('action_code');
+    var campaignID = getCookie('campaign_id')
 
-    console.log(actionCode);
-    console.log(campaing_ID);
 
-    document.getElementById("id_camp").innerHTML = campaing_ID;
+    document.getElementById("id_camp").innerHTML = campaignID;
     document.getElementById("action_code").innerHTML = actionCode;
 
     document.getElementById("id_camp_px").innerHTML = campaing_ID;
