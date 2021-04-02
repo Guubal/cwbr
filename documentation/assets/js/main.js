@@ -35,8 +35,8 @@ $(document).ready(function() {
     var action_Code = getUrlParameter('action_code');
     createCookie("ActionCode", cookie + action_Code, 30);
 
-    campaignID = getCookie('campaign_id')
-    actionCode = getCookie('action_code')
+    campaignID = getCookie('campaign_id');
+    actionCode = getCookie('action_code');
 
 
     document.getElementById("id_camp").innerHTML = campaignID;
