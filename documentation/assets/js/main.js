@@ -30,14 +30,15 @@ $(document).ready(function() {
     };
 
     [
-        "utm_source",
-        "utm_medium",
-        "utm_campaign"
+        "campaign_id",
+        "action_code",
+        "name",
+        "currency"
     ]
-    .forEach(function(utm) {
+    .forEach(function(inf) {
 
-        if (getUrlParameter(utm) != null) {
-            createCookie("Integrada-" + utm, getUrlParameter(utm), 30);
+        if (getUrlParameter(inf) != null) {
+            createCookie("Integrada-" + inf, getUrlParameter(inf), 30);
         }
     });
 
