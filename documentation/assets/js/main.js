@@ -37,7 +37,7 @@ $(document).ready(function() {
     .forEach(function(utm) {
 
         if (getUrlParameter(utm) != null) {
-            CookieInt("Integrada-" + utm, getUrlParameter(utm), 30);
+            createCookie("Integrada-" + utm, getUrlParameter(utm), 30);
         }
     });
 
