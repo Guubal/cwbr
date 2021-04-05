@@ -7,8 +7,8 @@
     <title>Clickwise - Documentação</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/docs.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                     </div>
                 </div> -->
 
-                <button type="button" class="btn btn-outline-info inf-pixel" data-bs-toggle="modal" data-bs-target="#config_c">Info - Campaign</button>
+                <button type="button" class="btn btn-outline-info inf-pixel" data-bs-toggle="modal" data-bs-target="#config_c">Seu Pixel</button>
             </div>
         </nav>
         </div>
@@ -215,14 +215,14 @@
                         </div>
                         <div class="modal-body">
                             <p>
-                                <strong>ID da Campanha: </strong><span id="id_camp"></span> <br>
-                                <strong>Action Code ativo: </strong><span id="action_code"></span>
+                                <strong>ID da Campanha: </strong><span class="id_camp"></span> <br>
+                                <strong>Action Code ativo: </strong><span class="action_code"></span>
                             </p>
 
                             <hr>
                             <h5>Sua URL de Rastreamento</h5>
-                            <div class="bd-clipboard"><button type="button" onclick="copyPixel()" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                            <div class="highlight" id="test"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#" id="id_camp_px"></a></span><span class="s">/<span class="parametros"><a href="#" id="action_code_px"></a></span>/</span><span class="parametros"><a href="#">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#">{currency}</a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
+                            <div class="bd-clipboard"><button type="button" data-clipboard-target="#foo" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                            <div class="highlight" id="foo"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#" class="id_camp"></a></span><span class="s">/<span class="parametros"><a href="#" class="action_code"></a></span>/</span><span class="parametros"><a href="#">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#">{currency}</a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -237,6 +237,22 @@
     <section class="form">
 
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+
+    <script>
+        var btns = document.querySelectorAll('button');
+        var clipboard = new ClipboardJS(btns);
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

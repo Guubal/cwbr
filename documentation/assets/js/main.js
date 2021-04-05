@@ -37,28 +37,19 @@ function getCookie(name) {
 .forEach(function(inf) {
 
     if (getUrlParameter(inf) != null) {
-        createCookie("Integrada-" + inf, getUrlParameter(inf), 30);
+        createCookie("Clickwise - " + inf, getUrlParameter(inf), 30);
     }
 });
+campaignID = getCookie('Clickwise - campaign_id');
+actionCode = getCookie('Clickwise - action_code');
 
-// var cookie = "";
-// var campaing_ID = getUrlParameter('campaign_id');
-// createCookie("Campaing", cookie + campaing_ID, 30);
-// var action_Code = getUrlParameter('action_code');
-// createCookie("ActionCode", cookie + action_Code, 30);
-
-// campaignID = getCookie('Campaing');
-// actionCode = getCookie('ActionCode');
-
-
-// document.getElementById("id_camp").innerHTML = campaignID;
-// document.getElementById("action_code").innerHTML = actionCode;
-
-// document.getElementById("id_camp_px").innerHTML = campaing_ID;
-// document.getElementById("action_code_px").innerHTML = actionCode;
-function copyPixel() {
-    var copyText = document.getElementById("test");
-    copyText.select();
-    document.execCommand("copy");
+if (campaignID === undefined) {
+    $('.inf-pixel').addClass('d-none')
+} else {
+    $(".id_camp").html(campaignID);
+    if (actionCode === undefined) {
+        $(".action_code").html("sale")
+    } else {
+        $(".action_code").html(actionCode);
+    }
 }
-//       $('.card').addClass('test');
