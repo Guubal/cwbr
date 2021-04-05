@@ -7,9 +7,8 @@
     <title>Clickwise - Documentação</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/docs.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src='../assets/js/main.js'></script>
+
 </head>
 
 <body>
@@ -34,6 +33,10 @@
                         <a href="#" class="nav-item nav-link">Login</a>
                     </div>
                 </div> -->
+
+                <!-- start button urlpixel -->
+                <button type="button" class="btn btn-outline-info inf-pixel d-none" data-bs-toggle="modal" data-bs-target="#config_c">Seu Pixel</button>
+                <!-- end button urlpixel -->
             </div>
         </nav>
         </div>
@@ -85,7 +88,7 @@
                             <div class="collapse show" id="getting-started-collapse">
                                 <ul class="list-unstyled fw-normal pb-1 small">
                                     <li><a href="index.html" class="d-inline-flex align-items-center rounded">Introdução</a></li>
-                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded disabled">Gerador de Pixel</a></li>
+                                    <!-- <li><a href="generator.html" class="d-inline-flex align-items-center rounded active">Gerador de Pixell</a></li> -->
                                     <li><a href="gtm.html" class="d-inline-flex align-items-center rounded active">Google Tag Manager</a></li>
                                     <li><a href="#" class="d-inline-flex align-items-center rounded">Validar Disparo do Pixel</a></li>
 
@@ -129,7 +132,7 @@
                 <p class="bd-lead">Instalando o Pixel Clicwise usando o Gerenciador de tags do Google</p>
             </div>
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-                <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                <strong class="d-block h6 my-2 pb-2 border-bottom">Nesta Página</strong>
                 <!-- <a href="#h" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">Adci</a> -->
             </div>
             <div class="bd-content ps-lg-4 gtm">
@@ -178,11 +181,11 @@
                         <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion_">
                             <div class="accordion-body">
                                 <p>
-                                    Antes de prosseguir para este passo a passo, navegue até a seção <strong>Variáveis</strong> e certifique-se de que as variáveis ​​ainda não existam: Numero do Pedido(transactionID); Valor total da compra(transactionTotal)
+                                    Antes de prosseguir para este passo a passo, navegue até a seção <strong>Variáveis</strong> e certifique-se de que as variáveis ​​ainda não existam: Número do Pedido(transactionID); Valor total da compra(transactionTotal)
                                     e Valor do frete(transactionShipping).
                                 </p>
                                 <p>
-                                    Caso exista pule este passo e va para o passo <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">Adicione a Tag Clickwise na sua página WEB</a>
+                                    Caso exista pule este passo e vá para o passo <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-controls="collapse3">Adicione a Tag Clickwise na sua página WEB</a>
                                 </p>
                                 <p>Caso não exista ou você não consiga identificar prossiga</p>
 
@@ -190,7 +193,7 @@
                                     <li>Vá para o <strong>Google Tag Manager</strong> e clique no botão <strong>Visualizar</strong> na parte superior direita da página.
                                         <img src="../assets/img/pt-BR/step1.1.jpg" alt="Passo 1.1" data-bs-toggle="modal" data-bs-target="#slep1_1" class="img-fluid pointer rounded border"></li>
 
-                                    <li>Coloque a ULR da sua <strong>Loja</strong> e depois clique em <strong>Start</strong>.
+                                    <li>Coloque a URL da sua <strong>Loja</strong> e depois clique em <strong>Start</strong>.
                                         <img src="../assets/img/pt-BR/step1.2.jpg" alt="Passo 1.2" data-bs-toggle="modal" data-bs-target="#slep1_2" class="img-fluid pointer rounded border"></li>
 
                                     <li>Realize uma <strong>compra teste</strong>(confirmação de compra).
@@ -202,7 +205,7 @@
                                     <li>Clique em <strong>DataLayer</strong> para obter as informações coletadas da página.
                                         <img src="../assets/img/pt-BR/step1.4.jpg" alt="Passo 1.4" data-bs-toggle="modal" data-bs-target="#slep1_4" class="img-fluid pointer rounded border"></li>
 
-                                    <li id="slep1__6">Identifique e <strong>copie</strong> os nome das variáveis de: Valor Total do Pedido; ID do Pedido e Valor do Frete. (A imagem abaixo ilustra apenas um exemplo)
+                                    <li id="slep1__6">Identifique e <strong>copie</strong> os nomes das variáveis de: Valor Total do Pedido; ID do Pedido e Valor do Frete. (A imagem abaixo ilustra apenas um exemplo)
                                         <img src="../assets/img/pt-BR/step1.5.jpg" alt="Passo 1.5" data-bs-toggle="modal" data-bs-target="#slep1_5" class="img-fluid pointer rounded border">
                                         <table class="table table-hover table-bordered mt-3">
                                             <thead class="table-dark">
@@ -238,7 +241,7 @@
                                     <li>Clique na caixa <strong>Configuração da variável</strong> para configurar a variável.
                                         <img src="../assets/img/pt-BR/step1.8.jpg" alt="Passo 1.8" data-bs-toggle="modal" data-bs-target="#slep1_8" class="img-fluid pointer rounded border"></li>
 
-                                    <li>Escolha <strong>Variável de camamada de Dados</strong> na seção de Variáveis de Página.
+                                    <li>Escolha <strong>Variável de camada de Dados</strong> na seção de Variáveis de Página.
                                         <img src="../assets/img/pt-BR/step1.9.jpg" alt="Passo 1.9" data-bs-toggle="modal" data-bs-target="#slep1_9" class="img-fluid pointer rounded border"></li>
 
                                     <li>Nomeie o pixel, por exemplo: <strong>'NumeroDoPedido'</strong>; <strong>'ValorTotalDaCompra'</strong>; <strong>'ValorDoFrete'</strong>
@@ -294,12 +297,12 @@
                                                 <tr>
                                                     <td>CampaingID<span class="label label-required mr-4">obrigatório</span> </td>
                                                     <td>String</td>
-                                                    <td>ID único da Campanhha cadastrado na platforma Clickwise</td>
+                                                    <td>ID único da campanha cadastrado na plataforma Clickwise</td>
                                                 </tr>
                                                 <tr>
                                                     <td>OrderID<span class="label label-required mr-4">obrigatório</span> </td>
                                                     <td>String</td>
-                                                    <td>Número unico do pedido(ID do pedido) - TransactionID</td>
+                                                    <td>Número único do pedido(ID do pedido) - TransactionID</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Amount<span class="label label-required">obrigatório</span></td>
@@ -310,7 +313,7 @@
                                                     <td>Shipping<span class="label label-required">obrigatório</span></td>
                                                     <td>Float</td>
                                                     <td>Valor do Frete - transactionShipping <br><span class="inf">
-                                                        Se <strong>Shipping</strong> for igual à<strong>"WithShipping"</strong>, o pixel receberá o valor total da compra conciderando o frete</span></td>
+                                                        Se <strong>Shipping</strong> for igual à<strong>"WithShipping"</strong>, o pixel receberá o valor total da compra considerando o frete</span></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Currency<span class="label label-required">obrigatório</span></td>
@@ -466,16 +469,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="slep1_12" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="modal-body">
-                                <img class="" src="../assets/img/pt-BR/step1.12.jpg" style="width: 100%;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- end modal slet 1.0 -->
                 <!-- end modal slet 1.0 -->
                 <!-- end modal slet 1.0 -->
@@ -547,8 +540,57 @@
                 <!-- end modal slet 2.1 -->
                 <!-- end modal slet 2.1 -->
                 <!-- end modal slet 2.1 -->
+
+
+
+                <!-- start modal urlpixel -->
+                <!-- start modal urlpixel -->
+                <!-- start modal urlpixel -->
+                <div class="modal fade" id="config_c" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Informação sobre seu Pixel</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    <strong>ID da Campanha: </strong><span class="id_camp"></span> <br>
+                                    <strong>Action Code ativo na Campanha: </strong><span class="action_code"></span>
+                                </p>
+
+                                <hr>
+                                <h5>Seu Pixel</h5>
+                                <div class="bd-clipboard"><button type="button" data-clipboard-target="#foo" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                                <div class="highlight" id="foo"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#" class="id_camp" data-toggle="cwtooltip" data-placement="top" title="ID único da campanha cadastrado na plataforma Clickwise"></a></span><span class="s">/<span class="parametros"><a href="#" class="action_code"  data-toggle="cwtooltip" data-placement="top" title="Código de ação válido ativo na campanha"></a></span>/</span><span class="parametros"><a href="#"  data-toggle="cwtooltip" data-placement="top" title="Número único do pedido(ID do pedido)">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#"  data-toggle="cwtooltip" data-placement="top" title="Valor Total da transação sem o frete">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#" class="currency"  data-toggle="cwtooltip" data-placement="top" title="Código de moeda de 3 caracteres"></a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal urlpixel -->
+                <!-- end modal urlpixel -->
+                <!-- end modal urlpixel -->
         </main>
 
+
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+
+        <script>
+            var btns = document.querySelectorAll('button');
+            var clipboard = new ClipboardJS(btns);
+
+            clipboard.on('success', function(e) {
+                console.log(e);
+            });
+
+            clipboard.on('error', function(e) {
+                console.log(e);
+            });
+        </script>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -560,5 +602,6 @@
         $('[data-toggle="cwtooltip"]').tooltip()
     })
 </script>
+<script src='../assets/js/main.js'></script>
 
 </html>

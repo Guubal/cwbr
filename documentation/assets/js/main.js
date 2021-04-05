@@ -42,14 +42,23 @@ function getCookie(name) {
 });
 campaignID = getCookie('Clickwise - campaign_id');
 actionCode = getCookie('Clickwise - action_code');
+currency = getCookie('Clickwise - currency');
 
-if (campaignID === undefined) {
-    $('.inf-pixel').addClass('d-none')
-} else {
+
+if (campaignID != undefined) {
+    $('.inf-pixel').removeClass("d-none");
     $(".id_camp").html(campaignID);
     if (actionCode === undefined) {
-        $(".action_code").html("sale")
+        $(".action_code").html("sale");
     } else {
         $(".action_code").html(actionCode);
     }
+    if (currency === undefined) {
+        $(".currency").html("{currency}");
+    } else {
+        $(".currency").html(currency);
+    }
 }
+
+// document.body.contentEditable = true;
+// document.designMode = 'on';

@@ -34,7 +34,10 @@
                     </div>
                 </div> -->
 
-                <button type="button" class="btn btn-outline-info inf-pixel" data-bs-toggle="modal" data-bs-target="#config_c">Seu Pixel</button>
+
+                <!-- start button urlpixel -->
+                <button type="button" class="btn btn-outline-info inf-pixel d-none" data-bs-toggle="modal" data-bs-target="#config_c">Seu Pixel</button>
+                <!-- end button urlpixel -->
             </div>
         </nav>
         </div>
@@ -86,7 +89,7 @@
                             <div class="collapse show" id="getting-started-collapse">
                                 <ul class="list-unstyled fw-normal pb-1 small">
                                     <li><a href="index.html" class="d-inline-flex align-items-center rounded active">Introdução</a></li>
-                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded disabled">Gerador de Pixel</a></li>
+                                    <!-- <li><a href="generator.html" class="d-inline-flex align-items-center rounded disabled">Gerador de Pixel</a></li> -->
                                     <li><a href="gtm.html" class="d-inline-flex align-items-center rounded">Google Tag Manager</a></li>
                                     <li><a href="#" class="d-inline-flex align-items-center rounded">Validar Disparo do Pixel</a></li>
 
@@ -127,7 +130,7 @@
                     <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">#</a>
                     <h1 class="bd-title" id="content">Introdução</h1>
                 </div>
-                <p class="bd-lead">Estrutura URL de rastreamento de conversão..</p>
+                <p class="bd-lead">Estrutura URL de rastreamento de conversão.</p>
             </div>
 
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
@@ -163,7 +166,7 @@
                         <tr>
                             <td>campaign-id<span class="label label-required">obrigatório</span></td>
                             <td>String</td>
-                            <td>ID único da Campanhha cadastrado na platforma Clickwise</td>
+                            <td>ID único da campanha cadastrado na plataforma Clickwise</td>
                         </tr>
                         <tr>
                             <td>action-code<span class="label label-required">obrigatório</span></td>
@@ -173,7 +176,7 @@
                         <tr>
                             <td>order-id<span class="label label-required">obrigatório</span></td>
                             <td>String</td>
-                            <td>Número unico do pedido(ID do pedido) </td>
+                            <td>Número único do pedido(ID do pedido) </td>
                         </tr>
                     </tbody>
                 </table>
@@ -206,6 +209,9 @@
                 </table>
             </div>
 
+            <!-- start modal urlpixel -->
+            <!-- start modal urlpixel -->
+            <!-- start modal urlpixel -->
             <div class="modal fade" id="config_c" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
@@ -216,21 +222,23 @@
                         <div class="modal-body">
                             <p>
                                 <strong>ID da Campanha: </strong><span class="id_camp"></span> <br>
-                                <strong>Action Code ativo: </strong><span class="action_code"></span>
+                                <strong>Action Code ativo na Campanha: </strong><span class="action_code"></span>
                             </p>
 
                             <hr>
-                            <h5>Sua URL de Rastreamento</h5>
+                            <h5>Seu Pixel</h5>
                             <div class="bd-clipboard"><button type="button" data-clipboard-target="#foo" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                            <div class="highlight" id="foo"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#" class="id_camp"></a></span><span class="s">/<span class="parametros"><a href="#" class="action_code"></a></span>/</span><span class="parametros"><a href="#">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#">{currency}</a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
+                            <div class="highlight" id="foo"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#" class="id_camp" data-toggle="cwtooltip" data-placement="top" title="ID único da campanha cadastrado na plataforma Clickwise"></a></span><span class="s">/<span class="parametros"><a href="#" class="action_code"  data-toggle="cwtooltip" data-placement="top" title="Código de ação válido ativo na campanha"></a></span>/</span><span class="parametros"><a href="#"  data-toggle="cwtooltip" data-placement="top" title="Número único do pedido(ID do pedido)">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#"  data-toggle="cwtooltip" data-placement="top" title="Valor Total da transação sem o frete">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#" class="currency"  data-toggle="cwtooltip" data-placement="top" title="Código de moeda de 3 caracteres"></a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- end modal urlpixel -->
+            <!-- end modal urlpixel -->
+            <!-- end modal urlpixel -->
         </main>
     </div>
 
