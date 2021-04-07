@@ -47,6 +47,8 @@ currency = getCookie('Clickwise - currency');
 
 if (campaignID != undefined) {
     $('.inf-pixel').removeClass("d-none");
+    $('body').addClass("modal-open");
+    $('#config_c').modal("show");
     $(".id_camp").html(campaignID);
     if (actionCode === undefined) {
         $(".action_code").html("sale");
