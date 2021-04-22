@@ -1,0 +1,362 @@
+.bd-navbar {
+    padding: .75rem 0;
+    background-color: #2f3235;
+}
+
+.bd-custom {
+    min-height: 4rem;
+    background-color: #f3f3f5;
+}
+
+.bd-sidebar {
+    grid-area: sidebar;
+}
+
+.bd-main {
+    grid-area: main;
+}
+
+.bd-links .btn {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: transparent;
+    border: 0;
+}
+
+.bd-links .btn:focus {
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 70%);
+}
+
+.bd-links .btn[aria-expanded="true"]::before {
+    transform: rotate( 90deg)
+}
+
+.bd-links .btn[aria-expanded="true"] {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.bd-links .btn:hover,
+.bd-links .btn:focus {
+    color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(121, 82, 179, 0.1);
+}
+
+
+/* .bd-links .btn::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e);
+    transition: transform 0.35s ease;
+    transform-origin: .5em 50%;
+} */
+
+.bd-links .btn:hover,
+.bd-links .btn:focus {
+    color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(2, 2, 3, 0.1);
+}
+
+.bd-links .btn {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: transparent;
+    border: 0;
+}
+
+.bd-links .active {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.bd-links a {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.bd-intro {
+    grid-area: intro;
+}
+
+.bd-lead {
+    font-size: calc(1.275rem + .3vw);
+    font-weight: 300;
+}
+
+.bd-toc {
+    grid-area: toc;
+}
+
+.bd-subnavbar {
+    position: relative;
+    z-index: 1020;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+
+.bd-content {
+    grid-area: content;
+    min-width: 1px;
+}
+
+.highlight {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+}
+
+.bd-clipboard+.highlight {
+    margin-top: 0;
+}
+
+.bd-content .highlight {
+    margin-right: -.75rem;
+    margin-left: -.75rem;
+}
+
+.highlight pre {
+    padding: 0;
+    margin-top: .65rem;
+    margin-bottom: .65rem;
+    white-space: pre;
+    background-color: transparent;
+    border: 0;
+}
+
+.highlight pre code {
+    font-size: inherit;
+    color: #212529;
+    word-wrap: normal;
+}
+
+.highlight pre {
+    padding: 0;
+    margin-top: .65rem;
+    margin-bottom: .65rem;
+    white-space: pre;
+    background-color: transparent;
+    border: 0;
+}
+
+.bd-clipboard+.highlight {
+    margin-top: 0;
+}
+
+.chroma .nt {
+    color: #2f6f9f;
+}
+
+.chroma .na {
+    color: #006ee0;
+}
+
+.chroma .o {
+    color: #555;
+}
+
+.chroma .s {
+    color: #d73038;
+}
+
+.chroma .parametros a {
+    color: #8d1319;
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.label-required {
+    float: right;
+    background-color: rgb(155, 0, 0);
+    margin-top: 4px;
+}
+
+.label-required,
+.label-op {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin-left: 4px;
+}
+
+.label-op {
+    float: right;
+    background-color: gray;
+    margin-top: 4px;
+}
+
+.gtm ol {
+    padding: 0;
+    counter-reset: li;
+}
+
+.gtm ol,
+.gtm ul {
+    margin: 0;
+}
+
+.gtm ul,
+.gtm ol {
+    list-style-position: outside;
+}
+
+.gtm ol li {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+    padding: 5px 0 5px 40px;
+    margin-bottom: 8px;
+}
+
+.gtm ol li::before {
+    background: #0fbabb;
+}
+
+.gtm ol li::before {
+    content: counter(li);
+    counter-increment: li;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.modal-content .btn-close {
+    padding: .5rem .5rem;
+    margin: .5rem .5rem .5rem auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inf {
+    font-size: 10px;
+}
+
+a.disabled {
+    /* Make the disabled links grayish*/
+    color: #2f32355b;
+    /* And disable the pointer events */
+    pointer-events: none;
+}
+
+.bd-clipboard {
+    position: relative;
+    display: none;
+    float: right;
+}
+
+.btn-clipboard {
+    position: absolute;
+    top: .65rem;
+    right: .65rem;
+    z-index: 10;
+    display: block;
+    padding: .25rem .5rem;
+    font-size: .65em;
+    color: #085d5d;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: .25rem;
+}
+
+.btn-clipboard:hover {
+    color: #fff;
+    background-color: #085d5d;
+}
+
+@media (min-width: 576px) {
+    .highlight {
+        padding: 1rem 1.5rem;
+    }
+    .bd-content .highlight {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-links {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5rem;
+        display: block !important;
+        height: calc(100vh - 7rem);
+        padding-left: .25rem;
+        margin-left: -.25rem;
+        overflow-y: auto;
+    }
+    .bd-layout {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-areas: "sidebar main";
+        grid-template-columns: 1fr 3fr;
+    }
+    .my-md-4 {
+        margin-top: 1.5rem!important;
+        margin-bottom: 1.5rem!important;
+    }
+    .bd-main {
+        display: grid;
+        gap: inherit;
+        grid-template-areas: "intro" "toc" "content";
+        grid-template-rows: auto auto 1fr;
+    }
+    .bd-subnavbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    .bd-clipboard {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .bd-layout {
+        grid-template-columns: 1fr 5fr;
+    }
+    .bd-main {
+        grid-template-areas: "intro toc" "content toc";
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    .bd-toc {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5rem;
+        right: 0;
+        z-index: 2;
+        height: calc(100vh - 7rem);
+        overflow-y: auto;
+    }
+}

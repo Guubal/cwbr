@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <meta property="og:url" content="https://www.clickwise.net/" />
+    <meta property="og:description" content="Instructions for installing the Pixel URL">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Guubal/cwbr/main/documentation/cw.jpg">
+
+    <title>Clickwise | Instruction manual</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  navbar-expand-md navbar-dark  bd-navbar">
+            <div class="container-xxl">
+                <a href="#" class="navbar-brand center">
+                    <img src="https://panel.clickwise.net/static/images/clickwiselogo.png" height="40" alt="CoolBrand">
+                </a>
+                <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link active">Pixel Creator</a>
+                        <a href="#" class="nav-item nav-link">S2S Creator</a>
+                        <a href="#" class="nav-item nav-link">Messages</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link">Login</a>
+                    </div>
+                </div> -->
+            </div>
+        </nav>
+        </div>
+    </header>
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div class="container-xxl d-flex align-items-md-center">
+            <form class="bd-search position-relative me-auto">
+                <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.0" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            </form>
+            <!-- start button urlpixel -->
+            <button type="button" class="btn btn-info inf-pixel d-none" data-bs-toggle="modal" data-bs-target="#config_c">Your Pixel</button>
+            <!-- end button urlpixel -->
+
+            <div class="dropdown ms-3">
+                <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+           English
+        </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                    <li><a class="dropdown-item current disabled" aria-current="true" href="es-ES/generator.html">Espanhol</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="pt-BR/generator.html">Português</a></li>
+                </ul>
+            </div>
+
+
+            <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+        <title>Expand</title>
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+      </svg>
+      
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+        <title>Collapse</title>
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+      </svg>
+      
+          </button>
+        </div>
+    </nav>
+    <div class="container-xxl my-md-4 bd-layout">
+        <aside class="bd-sidebar">
+            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+                <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false">
+                                URL Pixel
+                    </button>
+
+                            <div class="collapse show" id="getting-started-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="index.html" class="d-inline-flex align-items-center rounded ">Introduction</a></li>
+                                    <li><a href="generator.html" class="d-inline-flex align-items-center rounded active">Pixel Generator</a></li>
+                                    <li><a href="gtm.html" class="d-inline-flex align-items-center rounded disabled">Google Tag Manager</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">Validate Pixel Trigger</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+                        URL Postback
+                    </button>
+
+                            <div class="collapse" id="customize-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 1</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+                        Network Affiliate Api
+                    </button>
+
+                            <div class="collapse" id="layout-collapse">
+                                <ul class="list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 3</a></li>
+                                    <li><a href="#" class="d-inline-flex align-items-center rounded">#Thinking 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- <li class="my-3 mx-4 border-top"></li> -->
+                    </ul>
+            </nav>
+        </aside>
+        <main class="bd-main order-1">
+            <div class="bd-intro ps-lg-4">
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">#</a>
+                    <h1 class="bd-title" id="content">Introduction</h1>
+                </div>
+                <p class="bd-lead">Clickwise pixel conversion tracking structure.</p>
+            </div>
+
+            <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+            </div>
+            <div class="bd-content ps-lg-4">
+                <p>The pixel is an image that is integrated in the confirmation page of a purchase or registration; or in platforms, such as Google Tag Manager, which have specific fields to add that pixel.This pixel is triggered by cookies, which are automatically
+                    saved on the computers of customers who have previously clicked on a banner from Clickwise.</p>
+                <p class="fw-bold">If a purchase is made directly from the page without passing previouslyby our redirection, the pixel will not work</p>
+
+
+                <h3 id="the-pixel">The Pixel
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#the-pixel" style="padding-left: 0.375em;"></a>
+                </h3>
+
+                <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#">{campaign-id}</a></span><span class="s">/sale/</span><span class="parametros"><a href="#">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#">{total-cost}</a></span><span class="s">&country=</span><span class="parametros"><a href="#">{country}</a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
+            </div>
+            <div class="accordion shadow mt-4 bg-light" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Tracking URL Generator
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <form>
+                                <div class="form-group">
+                                    <!-- <div class="row">
+                                        <div class="col">
+                                            <select class="form-select" id="TypeTracking">
+                                                <option value="default"selected>Select tracking URL type</option>
+                                                <option value="pixel">Pixel</option>
+                                                <option value="postback">Postback</option>
+                                            </select>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="radio" name="optionTracking" id="typ_pixel" value="option1" checked>
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        URL - Normal Pixel
+                                                </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="radio" name="optionTracking" id="typ_post" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        URL - Basic Postback
+                                                </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </form>
+
+                            <form class="fpixel flow is-visible is-open mt-3">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control copy" id="CampaignID" placeholder="Campaign ID">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control copy" id="TotalCost" value="{TotalCost}">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control copy" id="OrderID" value="{OrderID}">
+                                        </div>
+                                        <div class="col-2">
+                                            <select class="form-select" id="ActionCode">
+                                                <option value="sale">sale</option>
+                                                <option value="lead">lead</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div class="col-1">
+                                            <select class="form-select" id="validador">
+                                                <option value="html">HTML</option>
+                                                <option value="gtm">GTM</option>
+                                            </select>
+                                        </div> -->
+                                        <div class="col-1">
+                                            <select class="form-select" id="Currency">
+                                                <option value="USD">USD</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="ARP">ARP</option>
+                                                <option value="MXP">MXP</option>
+                                                <option value="BRL" selected="selected">BRL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="nameFile" placeholder="Save Name" value="URL Tracking Pixel - ">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">.txt</div>
+                                                </div>
+                                                <button class="btn btn-primary" type="button" id="button-addon2" onclick="makePixel()">Generate</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="input-group">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="copyPixel()">Copiar</button>
+                                            <textarea class="form-control" id="textarea" rows="3"></textarea>
+                                            <div class="input-group-text">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" value="gtm" id="validador" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">GTM</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 justify-content-end">
+                                        <div class="col-auto">
+                                            <button type="button" onclick="savePixel()" class="btn btn-success">Salvar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="fpostback flow mt-3">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control copy" id="CampaignIDURL" placeholder="Campaign ID" required>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control copy" id="TotalCostURL" value="{TotalCost}">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control copy" id="OrderIDURL" value="{OrderID}">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control copy" id="tid" value="{Tid}">
+                                        </div>
+                                        <div class="col-1">
+                                            <input type="text" class="form-control copy" id="ActionCodeURL" value="lead">
+                                        </div>
+                                        <!-- <div class="col">
+                                            <select class="form-select" id="RefIDURL">
+                                                <option value="{RefID}">{RefID}</option>
+                                                <option value="4f99af95c9ae7">4f99af95c9ae7</option>
+                                            </select>
+                                        </div> -->
+                                        <div class="col-1">
+                                            <select class="form-select" id="CurrencyURL">
+                                                <option value="USD">USD</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="ARP">ARP</option>
+                                                <option value="BRL" selected="selected">BRL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="nameFileURL" placeholder="Save Name" value="URL Tracking Postback - ">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">.txt</div>
+                                                </div>
+                                                <button class="btn btn-primary" type="button" id="button-addon2" onclick="createUrl()">Generate</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="input-group">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="copyS2S()">Copiar</button>
+                                            <textarea class="form-control" id="textareaurl" rows="3"></textarea>
+                                            <div class="input-group-text">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" value="gtm" id="validador" disabled>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">GTM</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 justify-content-end">
+                                        <div class="col-auto">
+                                            <button type="button" onclick="saveURL()" class="btn btn-success">Salvar</button>
+                                        </div>
+                                    </div>
+                                    <!--<button type="button" class="close mt-3 ml-2" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>-->
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start modal urlpixel -->
+            <!-- start modal urlpixel -->
+            <!-- start modal urlpixel -->
+            <div class="modal fade" id="config_c" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Information about your Pixel</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <strong>Campaign ID: </strong><span class="id_camp"></span> <br>
+                                <strong>Action Code active in Campaign: </strong><span class="action_code"></span>
+                            </p>
+
+                            <hr>
+                            <h5>Your Pixel</h5>
+                            <div class="bd-clipboard"><button type="button" data-clipboard-target="#foo" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                            <div class="highlight" id="foo"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">width=</span><span class="s">"1"</span> <span class="na">height=</span><span class="s">"1"</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://r.clickwise.net/t/</span><span class="parametros"><a href="#" class="id_camp" data-toggle="cwtooltip" data-placement="top" title="Unique campaign ID on the Clickwise platform"></a></span><span class="s">/<span class="parametros"><a href="#" class="action_code"  data-toggle="cwtooltip" data-placement="top" title="Valid action code active in campaign"></a></span>/</span><span class="parametros"><a href="#"  data-toggle="cwtooltip" data-placement="top" title="Unique order/action ID">{order-id}</a></span><span class="s">?total-cost=</span><span class="parametros"><a href="#"  data-toggle="cwtooltip" data-placement="top" title="Order amount without shipping">{total-cost}</a></span><span class="s">&amp;currency=</span><span class="parametros"><a href="#" class="currency"  data-toggle="cwtooltip" data-placement="top" title="s3 char currency code"></a></span><span class="s">"</span><span class="p">/&gt;</span></code></pre></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal urlpixel -->
+            <!-- end modal urlpixel -->
+            <!-- end modal urlpixel -->
+        </main>
+    </div>
+
+    <section class="form">
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+
+    <script>
+        var btns = document.querySelectorAll('button');
+        var clipboard = new ClipboardJS(btns);
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $('[data-toggle="cwtooltip"]').tooltip()
+    })
+</script>
+<script src='assets/js/main.js'></script>
+
+</html>
