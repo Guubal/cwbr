@@ -78,10 +78,10 @@ function makePixel() {
         var currency = document.getElementById("Currency").value;
         if (actioncode == 'lead') {
             pixel_img = '<!-- Pixel Integration ClickWise -->\n<img width="1" height="1" src="https://r.clickwise.net/t/' + campaignid + '/' + actioncode + '/' + orderid + '&amp;currency=' + currency + '" />\n<!-- End Pixel Integration ClickWise -->';
-            pixel_gtm = 'https://r.clickwise.net/t/' + campaignid + '/' + actioncode + '/{' + orderid + '}&amp;currency=' + currency;
+            pixel_gtm = 'https://r.clickwise.net/t/' + campaignid + '/' + actioncode + '/' + orderid + '&amp;currency=' + currency;
         } else {
             pixel_img = '<!-- Pixel Integration ClickWise -->\n<img width="1" height="1" src="https://r.clickwise.net/t/' + campaignid + '/' + actioncode + '/' + orderid + '?total-cost=' + totalcost + '&amp;currency=' + currency + '" />\n<!-- End Pixel Integration ClickWise -->';
-            pixel_gtm = 'https://r.clickwise.net/t/' + campaignid + '/' + actioncode + '/{' + orderid + '}?total-cost={' + totalcost + '}&amp;currency=' + currency;
+            pixel_gtm = 'https://r.clickwise.net/t/' + campaignid + '/' + actioncode + '/' + orderid + '?total-cost=' + totalcost + '&amp;currency=' + currency;
         };
         document.getElementById("textarea").innerHTML = pixel_gtm;
 
